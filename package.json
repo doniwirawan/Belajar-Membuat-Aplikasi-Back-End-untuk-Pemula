@@ -10,6 +10,10 @@
   },
   "author": "doniwirawan",
   "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/doniwirawan/Belajar-Membuat-Aplikasi-Back-End-untuk-Pemula"
+  },
   "dependencies": {
     "@hapi/hapi": "^21.1.0",
     "nanoid": "^4.0.0"
