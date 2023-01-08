@@ -117,7 +117,7 @@ const addBookHandler = (request, h) => {
       .response({
         status: "fail",
         message:
-                    "Gagal menambahkan buku. readPage tidak boleh lebih besar dari pageCount",
+          "Gagal menambahkan buku. readPage tidak boleh lebih besar dari pageCount",
       })
       .code(400)
     return response
@@ -165,7 +165,7 @@ const addBookHandler = (request, h) => {
   // The server failed to load the book due to a generic error.
   const response = h
     .response({
-      status: "fail",
+      status: "error",
       message: "Buku gagal ditambahkan",
     })
     .code(500)
@@ -232,7 +232,7 @@ const editBookByIdHandler = (request, h) => {
       .response({
         status: "fail",
         message:
-                    "Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount",
+          "Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount",
       })
       .code(400)
     return response
